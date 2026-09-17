@@ -1,0 +1,14 @@
+[2026-09-17T06:53:18Z] === ENRICH ITERATION 1 START | repo=python-hyper/brotlipy sha=3fd4d205 ===
+[2026-09-17T06:53:18Z] [iter=1] PHASE START: enrich repo=python-hyper/brotlipy sha=3fd4d205 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/3fd4d205-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/3fd4d205e1a356c9b02faccfbe449e774537ddf2.nq.gz
+[2026-09-17T06:53:18Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-17T06:53:19Z] [iter=1] AST store loaded triples=44913 load_secs=1 mem_mb=148 MB
+[2026-09-17T06:53:19Z] [iter=1] Step 2: Finding LSP targets mem_mb=148 MB
+[2026-09-17T06:53:19Z] [iter=1] LSP targets found call_sites=402 imports=0 extends=0 implements=0 secs=0
+[2026-09-17T06:53:19Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=148 MB
+[2026-09-17T06:53:19Z] [iter=1] Position index built positions=3024 nodes_with_types=3949 secs=0 mem_mb=148 MB
+[2026-09-17T06:53:19Z] [iter=1] Step 3: Starting LSP resolution mem_mb=148 MB already_completed_types=[] already_completed_files=0
+[2026-09-17T06:53:19Z] [iter=1] Resolving target type target_type=call_site count=402
+[2026-09-17T06:53:27Z] [iter=1] Target type resolved target_type=call_site resolved=192 errors=40 secs=7 mem_mb=148 MB
+[2026-09-17T06:53:28Z] [iter=1] Step 5: Writing final enrichment file triples=3279
+[2026-09-17T06:53:28Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/3fd4d205e1a356c9b02faccfbe449e774537ddf2.nq.gz size_kb=51
+[2026-09-17T06:53:28Z] [iter=1] PHASE END: enrich elapsed_s=10 elapsed_min=0.2 total_triples=3279
